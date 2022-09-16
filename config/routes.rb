@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # get 'post_images/index'
   # get 'post_images/show'
   resources :post_images, only: [:new, :index, :show, :create, :destroy]
-  resources :users, only[:show, :edit]
+  resources :users, only: [:show, :edit]
   
   
   
